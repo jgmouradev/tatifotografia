@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+
+
+
+
+
+body{
+    background:#e9ecef;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+ }
+ p{
+  font-family: 'Patrick Hand', cursive;
+ }
+
+/*Header e Menu*/
+
+.header{
+    background:#fff112;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    
+}
+
+
+.menu{
+    display: flex;
+}
+.menu li{
+    margin-left: 20px;
+}
+.menu li a{
+    display: block;
+    padding: 10px;
+    
+}
+
+.menu a{
+    color:black;
+    text-transform:capitalize;
+    font-size: 1.25rem;
+    font-family: 'Recursive', sans-serif;
+    font-weight:bold;
+    
+   
+}
+
+.logo img{
+    width: 305px;
+    height: 150px;
+}
+
+.menu a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background:red;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 1px 0;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  
+}
+.mySlides img {
+    width: 100%;
+    height: 465px;
+   
+    background-size: cover;
+  }
+  
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color:white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dotstyle{
+    margin-top: -55px;
+    text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.galeria img{
+  width: 330px;
+  height: 390px;
+  overflow: hidden;
+  margin: 1px;
+  border-radius: 5px;
+  filter: grayscale();
+ }
+ .galeria img:hover{
+   filter: none;
+   transition: 1s;
+ }
+.small_img{
+  height: 100%;
+  cursor: pointer;
+  
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+/*Section Quem Somos*/
+
+.apresentacao h1{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform:capitalize;
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+  font-weight: lighter;
+ }
+ .apresentacao h1::after{
+	content: '';
+	background:black;
+	display: block;
+	height:3px;
+	width:115px;
+	margin: -10px auto 1px;
+}
+.apresentacao .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  padding: 30px;
+}
+.apresentacao img{
+  width:300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.apresentacao p{
+  font-size: 1.5rem;
+  margin: 110px 40px 0px 30px;
+}
+
+/*Section Ensaios fotograficos*/
+
+
+.ensaios h1{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform:capitalize;
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+  font-weight: lighter;
+ }
+ .ensaios h1::after{
+	content: '';
+	background:black;
+	display: block;
+	height:3px;
+	width:95px;
+	margin: -10px auto 1px;
+}
+
+ /*Section Contato*/
+ 
+ .contato h1{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform:capitalize;
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+  font-weight: lighter;
+ }
+ .contato h1::after{
+	content: '';
+	background:black;
+	display: block;
+	height:3px;
+	width:250px;
+	margin: 5px auto 1px;
+}
+ .contato p{
+   text-align: center;
+   font-size: 1.5rem;
+   margin-top: -30px;
+  
+ }
+ .formulario{
+  display: flex;
+  justify-content:start;
+  flex-direction:row;
+  text-align:center;
+  padding: 30px;
+  
+}
+
+input[type=text]{
+width: 65%;
+background:white;
+font-family: 'Recursive', sans-serif;
+margin: 8px 0;
+padding: 14px;
+border-radius:5px;
+border: none;
+outline: none;
+
+}
+textarea{
+  width: 65%;
+  margin: 8px 0;
+  padding: 14px;
+  border-radius:5px;
+  background:white;
+  font-family: 'Recursive', sans-serif;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+input[type=button]{
+width:35%;
+background-color:#000401;
+color:#fff;
+font-family: 'Recursive', sans-serif;
+text-transform: uppercase;
+font-weight: bolder;
+border-radius:5px;
+border:none;
+cursor: pointer;
+margin: 8px 0;
+padding: 14px;
+outline: none;
+
+}
+.redesocial{
+  margin-top: -55px;
+}
+.redesocial h1{
+  font-size: 1.5rem;
+}
+.fa-ul{
+  margin-top: -55px;
+  padding: 30px;
+}
+.redesocial img{
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+}
+
+.whatsapp{
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px;
+  margin-top: -70px;
+}
+
+.whatsapp img{
+  width: 65px;
+  height: 60px;
+}
+footer{
+  background:#fff112;
+  padding: 15px;
+}
+footer p{
+  text-align: center;
+  color: #000;
+  font-size: 1.5rem;
+  
+}
+
