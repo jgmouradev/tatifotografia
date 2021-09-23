@@ -5,3 +5,6 @@
     gallery:{enabled:true}
     // other options
   });
+
+  
+ 
