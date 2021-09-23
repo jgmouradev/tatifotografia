@@ -1,0 +1,142 @@
+
+/*Small devices*/
+@media(min-width:320px) and (max-width: 500px){
+	.menu{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+  .mySlides img {
+     height: 230px;
+  }
+  .prev, .next {
+    top: 75%;
+  }
+	.apresentacao img{
+	  width:200px;
+	  height: 220px;
+}
+.apresentacao h1{
+    margin-top: 85px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    
+  }
+.apresentacao p{
+  font-size: 1.5rem;
+  margin-top: 15px;
+  text-align: center;
+}
+.apresentacao .container{
+    padding: 0px;
+  }
+.galeria{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.galeria img{
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 5px;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contato h1{
+    margin-top: 70px;
+}
+.contato_texto h1::after{
+	width:190px;
+}
+.formulario{
+    display: flex;
+    justify-content:start;
+    flex-direction:column;
+    text-align:center;
+    padding: 30px;
+}
+input[type=text], textarea,input[type=button]{
+    width:100%;
+}
+.whatsapp img{
+    width: 45px;
+    height: 45px;
+  }
+}
+/*Tablets*/
+@media(min-width:500px) and (max-width:768px){
+  
+  .mySlides img {
+    height: 300px;
+ }
+ .prev, .next {
+   top: 65%;
+ }
+ .apresentacao img{
+   width:240px;
+   height: 265px;
+}
+.apresentacao h1{
+  margin-top: 65px;
+  margin-bottom: 20px;
+  
+}
+.apresentacao p{
+font-size: 1.5rem;
+margin: 15px 40px 0px 30px;
+text-align: center;
+}
+.apresentacao .container{
+  padding:0px;
+}
+.galeria{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.galeria img{
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: 10px;
+  
+}
+.formulario{
+  flex-direction: column;
+}
+input[type=button]{
+  width:65%;
+}
+}
+/*Larger Devices*/
+
+@media(min-width:769px) and (max-width:1356px){
+  .galeria img{
+    width: 278px;
+    height: 390px;
+    margin: 10px;
+  }
+ .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
