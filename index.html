@@ -21,8 +21,8 @@
         <nav>
             <ul class="menu">
                 <li><a href="#empresa">Home</a></li>
-                <li><a href="#empresa">Sobre</a></li>
-                <li><a href="#projetos">Ensaios</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#ensaios">Ensaios</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
@@ -60,7 +60,7 @@
   </div>
 </div>
 
-<section class="apresentacao">
+<section class="apresentacao js-scroll.ativo" id="sobre">
   <h1>Tati Rocha</h1>
   <div class="container">
     <img src="images/tati.jpg" alt="">
@@ -69,7 +69,7 @@
   </div>
 </section>
 
-<section class="ensaios">
+<section class="ensaios js-scroll.ativo" id="ensaios">
   <h1>Ensaios</h1>
 
   <div class="modal">
@@ -94,9 +94,11 @@
 </div>  
 </section>
 
-<section class="contato">
+<section class="contato js-scroll.ativo" id="contato">
+  <div class="contato_texto">
   <h1>Vamos fotografar??</h1>
   <p>Entre em contato e agende seu ensaio fotográfico.</p>
+  </div>
   <div class="formulario">
     <form action="#" method="POST">
         <input type="text" id="name" name="name" autocomplete="none" placeholder="Nome">
@@ -108,14 +110,14 @@
     <div class="redesocial">
       <h1>Redes Sociais</h1>
         <ul class="fa-ul">
-            <a href="#"><img src="images/facebook-app.png" alt=""></a>
-            <a href="#"><img src="images/ig-instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/tatirochafotografiass"><img src="images/facebook-app.png" alt=""></a>
+            <a href="https://www.instagram.com/tatirochafotografias/"><img src="images/ig-instagram.png" alt=""></a>
         </ul>
       </div>
       
 </div>
 <div class="whatsapp">
-  <a href="#"><img src="images/wa-whatsapp.png" alt=""></a>
+  <a href="https://api.whatsapp.com/send?phone=53999427224&text=Oi%20 Logo logo entraremos em contato para conversarmos."><img src="images/wa-whatsapp.png" alt=""></a>
 </div>
 </section>
 <footer>
@@ -128,6 +130,8 @@
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/smooth-scroll.min.js"></script>
+<script src="js/scroll.js"></script>
 <script src="js/main.js"></script>
 <script src="js/slideshow.js"></script>
 </html>
