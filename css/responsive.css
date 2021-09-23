@@ -17,14 +17,14 @@
 	  height: 220px;
 }
 .apresentacao h1{
-    margin-top: 35px;
-    margin-bottom: 10px;
+    margin-top: 85px;
+    margin-bottom: 30px;
     font-size: 2.5rem;
     
   }
 .apresentacao p{
   font-size: 1.5rem;
-  margin: 15px 40px 0px 30px;
+  margin-top: 15px;
   text-align: center;
 }
 .apresentacao .container{
@@ -48,7 +48,10 @@
   justify-content: center;
 }
 .contato h1{
-    margin-top: 70px;
+    margin-top: 25px;
+}
+.contato_texto h1::after{
+	width:190px;
 }
 .formulario{
     display: flex;
